@@ -7,9 +7,7 @@ export default class App extends Component {
       <div className="app">
         <Login />
 
-        <div style={{ color: "red" }}>
-          Warning: this is the experimental template, pardon the bugs
-        </div>
+        
       </div>
     );
   }
