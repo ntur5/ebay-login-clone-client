@@ -136,8 +136,8 @@
             
 
             .separator-top {
-                // border-left: 1px solid #dddddd;
-                border-left: 1px solid black;
+                border-left: 1px solid #dddddd;
+                // border-left: 1px solid black;
                 height: 123px;
                 position: relative;
                 left: 50%;
@@ -153,8 +153,8 @@
             }
 
             .separator-bottom {
-                // border-left: 1px solid #dddddd;
-                border-left: 1px solid black;
+                border-left: 1px solid #dddddd;
+                // border-left: 1px solid black;
                 height: 119px;
                 position: relative;
                 left: 50%;
@@ -165,65 +165,58 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            align-items: center;
+
+            .facebook-image {
+                position: relative;
+                top: 7px;
+                left: -28px;
+            }
 
             .fb-btn {
+                text-align: left;
                 background-color:#4267b2;
                 border:#4267b2;
                 color: white;
                 font-size: 1.125rem;
                 font-weight: 700;
-                padding: 15px;
-                padding-left: 40px;
+                padding-top: 2px;
+                padding-bottom: 11px;
+                padding-left: 38px;
                 width: 300px;
-                margin-top: 16px;
+                // margin-top: 16px;
+
+                &:hover {
+                    background-color: blue;
+                }
+                    // background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-FB-f-Logo__white_29-Nm8L0bDZ.png) 6px 6px no-repeat;
+                
+            }
+
+            .google-image {
+                width: 20px;
+                position: relative;
+                top: 4px;
+                left: -35px;
             }
 
             .google-btn {
-                border: thin solid #888;
+                border: thin solid rgb(161, 160, 160);
                 background-color: #fff;
                 color: #444;
                 font-size: 1.125rem;
                 font-weight: 700;
-                padding: 15px;
-                padding-left: 20px;
+                padding-top: 9px;
+                padding-bottom: 11px;
+                padding-left: 47px;
                 width: 300px;
-            }
-        }
+                margin-top: 17px;
+                text-align: left;
 
-        .social-buttons-container {
-            
-            
-            .fb-btn {
-                background-color:#4267b2;
-                border:#4267b2;
-                color: white;
-                padding: 15px;
-                // padding-left: 20px;
-                
                 // &::before {
-
-                //     background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-FB-f-Logo__white_29-Nm8L0bDZ.png) 6px 6px no-repeat;
-                
+                    // background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-google-logo-icon-PNG-Transparent-Background-Z_TFsqo3.png) no-repeat;
                 // }
             }
-
-            
-
-            .google-btn {
-                border: thin solid #888;
-                background-color: #fff;
-                color: #444;
-                padding: 15px;
-                // padding-left: 20px;
-
-                background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-google-logo-icon-PNG-Transparent-Background-Z_TFsqo3.png) no-repeat;
-                
-            }
-
         }
-
-        
     }
 
     .stay-signed-in-container {
@@ -231,7 +224,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 24px;
+        margin-top: 21px;
         color:#151e27;
         padding-left: 8px;
         font-size: 14px;
@@ -239,7 +232,11 @@
         padding-bottom: 35px;
 
         .checkbox-container {
-
+            img {
+                padding-right: 8px;
+                top: 3px;
+                position: relative;
+            }
         }
 
         .privacy-text {
@@ -250,9 +247,19 @@
             margin-top: 8px;
             font-size: 12px;
 
+            .privacy-text-divs {
+                
+            }
+
             a {
                 color:#151e27;
+                
+                &:visited {
+                    color: #6a29b9;
+                }
             }
+
+
         }
     }
 
@@ -264,7 +271,7 @@
         font-size: 11px !important;
         border-top: 1px solid #ccc;
         margin-top: 150px;
-        padding: 40px 0;
+        padding: 42px 0;
 
         a {
             text-decoration: underline !important;
@@ -272,8 +279,15 @@
             
         }
 
-        img {
-            padding-top: 3px;
+        .norton-image {
+            padding-top: 4px;
+        }
+
+        .adChoice-image {
+            padding-top: 4px;
+            position: relative;
+            top: 3px;
+            left: 3px;
         }
         
     }
