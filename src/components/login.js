@@ -47,42 +47,43 @@ export default class Login extends Component {
             <div className="signin-container">
                 <form className="auth-form-wrapper">
                     <div className="form-group">
-                        <input 
-                            type="email" 
-                            name="email"
-                            placeholder="Email or username"
-                            value={this.state.email}
-                            onChange={this.handleChange}
-                        />
+                            <lable className="label">Email or username</lable>
+                            <input 
+                                type="email" 
+                                name="email"
+                                value={this.state.email}
+                                onChange={this.handleChange}
+                            />
                     </div>
                     <div className="form-group">
+                        <label className="label">Password</label>
                         <input 
                             type="password" 
                             name="password"
-                            placeholder="Password"
                             value={this.state.password}
                             onChange={this.handleChange}
                         />
                     </div>
                     <button className="signin-btn">Sign in</button>
                     <div className="password-reset">
-                        <div>
-                            <a >Text a temporary password</a>
+                        <div className="password-reset-link-1">
+                            <a href="#">Text a temporary password</a>
                         </div>
-                        <div>
-                            <a>Reset your password</a>
+                        <div className="password-reset-link-2">
+                            <a href="#">Reset your password</a>
                         </div>
                     </div>
                 </form>
                 
                 <div className="signin-separator" >
-                    <div className="separator animate"></div>
+                    <div className="separator-top animate"></div>
                     <div className="or-seperator">or</div>
-                    <div className="separator animate"></div>
+                    <div className="separator-bottom animate"></div>
                 </div>
                 <div className="signin-buttons">
-                <button className="fb-btn">Sign in with Facebook</button>
-                    <button className="google-btn">Sign in with Google</button>
+                    <button className="fb-btn"><img src="https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-FB-f-Logo__white_29-Nm8L0bDZ.png" />Sign in with Facebook</button>
+                    <button className="google-btn"><img src="https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-google-logo-icon-PNG-Transparent-Background-Z_TFsqo3.png" />Sign in with Google</button>
+                    {/* <button className="google-btn">Sign in with Google</button> */}
                 </div>
                 {/* <div className="social-buttons-container">
                     <button className="fb-btn">Sign in with Facebook</button>
@@ -91,19 +92,31 @@ export default class Login extends Component {
             </div>
             <div className="stay-signed-in-container">
                 <div className="checkbox-container">
-                    stay signed in
+                    <input id="csi" className="checkbox-control" type="checkbox" checked="" value="1">
+
+                    </input>
+                    <label for="csi">Stay signed in</label>
+                </div>
+                <div className="privacy-text">
+                    <div>
+                        Using a public or shared device?
+                    </div>
+                    <div>
+                        Uncheck to protect your account. 
+                    <a href="#" className="learn-more-link" role="button" aria-label="Learn more about stay signed in." >Learn more</a>
+                    </div>
                 </div>
             </div>
             <div className="footer">
-                <div>
-                    <a href="https://www.ebayinc.com/accessibility/">Accessibility</a>
-                    <a href="https://pages.ebay.com/help/policies/user-agreement.html">User Agreement</a>
-                    <a href="https://pages.ebay.com/help/policies/privacy-policy.html">Privacy</a>
-                    <a href="https://pages.ebay.com/help/account/cookies-web-beacons.html">Cookies</a>
-                    <a href="https://www.ebay.com/adchoice">AdChoice</a>
+                <div className="footer-links">
+                    Copyright © 1995-2020 eBay Inc. All Rights Reserved. 
+                    <a href="https://www.ebayinc.com/accessibility/">Accessibility,</a>
+                    <a href="https://pages.ebay.com/help/policies/user-agreement.html">User Agreement,</a>
+                    <a href="https://pages.ebay.com/help/policies/privacy-policy.html">Privacy,</a>
+                    <a href="https://pages.ebay.com/help/account/cookies-web-beacons.html">Cookies,</a>
+                    and <a href="https://www.ebay.com/adchoice">AdChoice</a>
                 </div>
-                {/* <a href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.ebay.com&amp;lang=en"></a> */}
-                {/* <a title="Verify site's SSL certificate" href="https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=www.ebay.com&amp;lang=en" onclick="this.href='https://trustsealinfo.websecurity.norton.com/splash?form_file=fdf/splash.fdf&amp;dn=#D#&amp;lang=en'.replace(/#D#/,location.host);return true" rel="noreferrer"><i id="gf-norton">Norton Secured - powered by Verisign</i></a> */}
+                <img src="https://ir.ebaystatic.com/rs/v/f5uxsy10bmz05dtrtrqybl5qquv.png"></img>
             </div>
         </div>
         )

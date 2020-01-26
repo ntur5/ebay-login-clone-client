@@ -9,7 +9,7 @@
 
     .header {
         display: block;
-        // margin-bottom: 8px;
+        margin-bottom: 19px;
         // overflow: hidden;
         width: 100%;
         max-width: 175px;
@@ -71,7 +71,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        margin-top: 22px;
         
 
         .auth-form-wrapper {
@@ -81,12 +81,19 @@
             justify-content: center;
 
             .form-group {
-                
-                input {
-                    width: 282px;
-                }
-
-                
+                    .label {
+                        color: #6E6E6E;
+                        display: block;
+                        margin-top: 2px;
+                    }
+                    
+                    input {
+                        width: 282px;
+                        border: none;
+                        border-bottom: 1px solid #929292;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
             }
 
             .signin-btn {
@@ -96,15 +103,42 @@
                 font-size: 1.125rem;
                 font-weight: 700;
                 width: 300px;
+                padding: 10px;
+                margin-top: 22px;
+            }
+
+            .password-reset {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 16px;
+                line-height: 22px;
+                
+                .password-reset-link-1 {
+                    a {
+                        text-decoration: none;
+                        color: #006efc;
+                        cursor: pointer;
+                    }
+                }
+                .password-reset-link-2 {
+                    margin-top: 8px;
+                    a {
+                        text-decoration: none;
+                        color: #006efc;
+                        cursor: pointer;
+                    }
+                }
             }
         }
 
         .signin-separator {
             
 
-            .separator {
-                border-left: 1px solid #dddddd;
-                height: 100px;
+            .separator-top {
+                // border-left: 1px solid #dddddd;
+                border-left: 1px solid black;
+                height: 123px;
                 position: relative;
                 left: 50%;
             }
@@ -114,13 +148,23 @@
                 font-size: 12px;
                 width: 175px;
                 position: relative;
-               
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+
+            .separator-bottom {
+                // border-left: 1px solid #dddddd;
+                border-left: 1px solid black;
+                height: 119px;
+                position: relative;
+                left: 50%;
             }
         }
 
         .signin-buttons {
             display: flex;
             flex-direction: column;
+            align-items: center;
             align-items: center;
 
             .fb-btn {
@@ -155,15 +199,26 @@
                 border:#4267b2;
                 color: white;
                 padding: 15px;
-                padding-left: 20px;
+                // padding-left: 20px;
+                
+                // &::before {
+
+                //     background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-FB-f-Logo__white_29-Nm8L0bDZ.png) 6px 6px no-repeat;
+                
+                // }
             }
+
+            
 
             .google-btn {
                 border: thin solid #888;
                 background-color: #fff;
                 color: #444;
                 padding: 15px;
-                padding-left: 20px;
+                // padding-left: 20px;
+
+                background: url(https://ir.ebaystatic.com/rs/c/sgninui-src-static-images-google-logo-icon-PNG-Transparent-Background-Z_TFsqo3.png) no-repeat;
+                
             }
 
         }
@@ -172,16 +227,55 @@
     }
 
     .stay-signed-in-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 24px;
-        color:
-        #151e27;
-        text-align: center;
+        color:#151e27;
+        padding-left: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 35px;
+
+        .checkbox-container {
+
+        }
+
+        .privacy-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            font-size: 12px;
+
+            a {
+                color:#151e27;
+            }
+        }
     }
 
     .footer {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        text-decoration: none;
+        align-items: center;
+        font-size: 11px !important;
+        border-top: 1px solid #ccc;
+        margin-top: 150px;
+        padding: 40px 0;
+
+        a {
+            text-decoration: underline !important;
+            color:#727272 !important;
+            
+        }
+
+        img {
+            padding-top: 3px;
+        }
+        
     }
 
     
